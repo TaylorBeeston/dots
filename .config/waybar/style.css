@@ -1,0 +1,464 @@
+* {
+    font-family:
+        FiraCode,
+        Noto Sans,
+        FontAwesome,
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+    font-size: 13px;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#mode,
+#cava,
+#idle_inhibitor,
+#custom-expand,
+#custom-cycle_wall,
+#custom-ss,
+#custom-dynamic_pill,
+#mpd {
+    padding: 0 10px;
+    border-radius: 15px;
+    background: #11111b;
+    color: #b4befe;
+    box-shadow: rgba(0, 0, 0, 0.116) 2 2 5 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+#cava {
+    font-family: "bargraph";
+    color: #16161d;
+    background: radial-gradient(circle,
+            #dcd7ba 0%,
+            /* fujiWhite */
+            #c8c093 12%,
+            /* fujiGray */
+            #dca561 19%,
+            /* surimiOrange */
+            #7fb4ca 20%,
+            /* waveAqua1 */
+            #7e9cd8 24%,
+            /* crystalBlue */
+            #98bb6c 36%,
+            /* springGreen */
+            #7e9cd8 37%,
+            /* oniViolet */
+            #6a9589 48%,
+            /* waveAqua2 */
+            #e6c384 52%,
+            /* carpYellow */
+            #7aa89f 52%,
+            /* lotusGreen2 */
+            #a3d4d5 59%,
+            /* waveBlue1 */
+            #9cabca 66%,
+            /* dragonBlue */
+            #658594 67%,
+            /* fujiGray */
+            #7fb4ca 68%,
+            /* waveAqua1 */
+            #727169 77%,
+            /* oldWhite */
+            #7e9cd8 78%,
+            /* crystalBlue */
+            #7e9cd8 82%,
+            /* oniViolet */
+            #d27e99 83%,
+            /* peachRed */
+            #7e9cd8 90%,
+            /* springViolet1 */
+            #c8c093 100%
+            /* fujiGray */
+        );
+    background-size: 450% 400%;
+    animation: gradient_f 48s ease-in-out infinite alternate-reverse;
+}
+
+#window>label {
+    font-size: 15px;
+}
+
+#window {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    padding: 10px;
+    font-weight: bolder;
+    color: #16161d;
+    background: #dcd7ba;
+    /* fujiWhite */
+    background: radial-gradient(circle,
+            #dcd7ba 0%,
+            /* fujiWhite */
+            #c8c093 12%,
+            /* fujiGray */
+            #dca561 19%,
+            /* surimiOrange */
+            #7fb4ca 20%,
+            /* waveAqua1 */
+            #7e9cd8 24%,
+            /* crystalBlue */
+            #98bb6c 36%,
+            /* springGreen */
+            #7e9cd8 37%,
+            /* oniViolet */
+            #6a9589 48%,
+            /* waveAqua2 */
+            #e6c384 52%,
+            /* carpYellow */
+            #7aa89f 52%,
+            /* lotusGreen2 */
+            #a3d4d5 59%,
+            /* waveBlue1 */
+            #9cabca 66%,
+            /* dragonBlue */
+            #658594 67%,
+            /* fujiGray */
+            #7fb4ca 68%,
+            /* waveAqua1 */
+            #727169 77%,
+            /* oldWhite */
+            #7e9cd8 78%,
+            /* crystalBlue */
+            #7e9cd8 82%,
+            /* oniViolet */
+            #d27e99 83%,
+            /* peachRed */
+            #7e9cd8 90%,
+            /* springViolet1 */
+            #c8c093 100%
+            /* fujiGray */
+        );
+    background-size: 450% 400%;
+    animation: gradient_f 48s ease-in-out infinite alternate-reverse;
+}
+
+window#waybar {
+    /* background-color: rgba(0, 0, 0, 0.116); */
+    background-color: transparent;
+
+    /* background: linear-gradient(180deg,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0) 50%,
+            rgba(0, 0, 0, 0.1) 100%); */
+}
+
+#custom-dynamic_pill label {
+    color: #11111b;
+    font-weight: bold;
+}
+
+#custom-dynamic_pill.paused label {
+    color: #89b4fa;
+    font-weight: bolder;
+}
+
+#workspaces button label {
+    color: #89b4fa;
+    font-weight: bolder;
+}
+
+#workspaces button.active label {
+    color: #11111b;
+    font-weight: bolder;
+}
+
+#workspaces {
+    background-color: transparent;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 25px;
+}
+
+#workspaces button {
+    box-shadow: rgba(0, 0, 0, 0.116) 2 2 5 2px;
+    background-color: #11111b;
+    border-radius: 15px;
+    margin-right: 10px;
+    padding: 10px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    font-weight: bolder;
+    color: #89b4fa;
+    transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.68);
+}
+
+#workspaces button.active {
+    padding-right: 20px;
+    box-shadow: rgba(0, 0, 0, 0.288) 2 2 5 2px;
+    padding-left: 20px;
+    padding-bottom: 3px;
+    background: #dcd7ba;
+    /* fujiWhite */
+    background: radial-gradient(circle,
+            #dcd7ba 0%,
+            /* fujiWhite */
+            #c8c093 12%,
+            /* fujiGray */
+            #dca561 19%,
+            /* surimiOrange */
+            #7fb4ca 20%,
+            /* waveAqua1 */
+            #7e9cd8 24%,
+            /* crystalBlue */
+            #98bb6c 36%,
+            /* springGreen */
+            #7e9cd8 37%,
+            /* oniViolet */
+            #6a9589 48%,
+            /* waveAqua2 */
+            #e6c384 52%,
+            /* carpYellow */
+            #7aa89f 52%,
+            /* lotusGreen2 */
+            #a3d4d5 59%,
+            /* waveBlue1 */
+            #9cabca 66%,
+            /* dragonBlue */
+            #658594 67%,
+            /* fujiGray */
+            #7fb4ca 68%,
+            /* waveAqua1 */
+            #727169 77%,
+            /* oldWhite */
+            #7e9cd8 78%,
+            /* crystalBlue */
+            #7e9cd8 82%,
+            /* oniViolet */
+            #d27e99 83%,
+            /* peachRed */
+            #7e9cd8 90%,
+            /* springViolet1 */
+            #c8c093 100%
+            /* fujiGray */
+        );
+    background-size: 400% 400%;
+    animation: gradient_f 20s ease-in-out infinite;
+    transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 30%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradient_f {
+    0% {
+        background-position: 0% 200%;
+    }
+
+    50% {
+        background-position: 200% 0%;
+    }
+
+    100% {
+        background-position: 400% 200%;
+    }
+}
+
+@keyframes gradient_f_nh {
+    0% {
+        background-position: 0% 200%;
+    }
+
+    100% {
+        background-position: 200% 200%;
+    }
+}
+
+#clock label {
+    color: #11111b;
+    font-weight: bolder;
+}
+
+#clock {
+    background: #dcd7ba;
+    /* fujiWhite */
+    background: linear-gradient(118deg,
+            #c34043 5%,
+            #7e9cd8 5%,
+            #7e9cd8 20%,
+            #c34043 20%,
+            #c34043 40%,
+            #76946a 40%,
+            #76946a 60%,
+            #c34043 60%,
+            #c34043 80%,
+            #7e9cd8 80%,
+            #7e9cd8 95%,
+            #c34043 95%);
+
+    background-size: 200% 300%;
+
+    animation: gradient_f_nh 4s linear infinite;
+    margin-right: 25px;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
+
+    font-size: 15px;
+    padding-top: 5px;
+    padding-right: 21px;
+    font-weight: bolder;
+    padding-left: 20px;
+}
+
+#battery.charging,
+#battery.plugged {
+    background-color: #658594;
+}
+
+#battery {
+    background-color: #11111b;
+    color: #a6e3a1;
+    font-weight: bolder;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@keyframes blink {
+    to {
+        background-color: #f9e2af;
+        color: #96804e;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background-color: #f38ba8;
+    color: #bf5673;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#cpu label {
+    color: #7e9cd8;
+}
+
+#cpu {
+    background: #1f1f28;
+    /* sumiInk1 */
+    background: radial-gradient(circle,
+            rgba(31, 31, 40, 1) 30%,
+            /* sumiInk1 */
+            rgba(22, 22, 29, 1) 100%
+            /* sumiInk0 */
+        );
+    color: #7e9cd8;
+    /* crystalBlue */
+}
+
+#memory {
+    background-color: #cba6f7;
+    color: #9a75c7;
+    font-weight: bolder;
+}
+
+#disk {
+    color: #964b00;
+}
+
+#backlight {
+    color: #90b1b1;
+}
+
+#network {
+    color: #000;
+}
+
+#network.disabled {
+    background-color: #45475a;
+}
+
+#network.disconnected {
+    background: rgb(243, 139, 168);
+    background: linear-gradient(45deg,
+            rgba(243, 139, 168, 1) 0%,
+            rgba(250, 179, 135, 1) 100%);
+    color: #fff;
+    font-weight: bolder;
+    padding-top: 3px;
+    padding-right: 11px;
+}
+
+#network.linked,
+#network.wifi {
+    background-color: #a6e3a1;
+}
+
+#network.ethernet {
+    background-color: #f9e2af;
+}
+
+#pulseaudio {
+    background-color: #fab387;
+    color: #bf7d54;
+    font-weight: bolder;
+}
+
+#pulseaudio.muted {
+    background-color: #90b1b1;
+}
+
+#custom-media {
+    color: #98bb6c;
+}
+
+#custom-media.custom-spotify {
+    background-color: #66cc99;
+}
+
+#custom-media.custom-vlc {
+    background-color: #ffa000;
+}
+
+#temperature {
+    background-color: #dcd7ba;
+    /* fujiWhite */
+    color: #727169;
+    /* oldWhite */
+}
+
+#temperature.critical {
+    background-color: #f38ba8;
+    color: #bf5673;
+}
+
+#tray {
+    background-color: #2980b9;
+}
+
+#tray>.passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray>.needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
+}
